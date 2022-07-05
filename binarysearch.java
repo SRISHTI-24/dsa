@@ -2,6 +2,7 @@ package searching;
 import java.util.Arrays;
 import java.util.Scanner;
 class bs{
+    // iterative method
     public boolean bsearch(int a[], int n, int t) {
         int s=0,l=n-1;
         while(s<=l)
@@ -19,6 +20,7 @@ class bs{
         }
         return false;
     }
+    // recursive method
     int binarys(int a[], int n, int s, int l, int t) {
         int m=(s+l)/2;
         if(s>=l)
