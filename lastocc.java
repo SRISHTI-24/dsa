@@ -1,5 +1,6 @@
 package searching;
 
+import java.util.Arrays;
 import java.util.Scanner;
 class lasttwoapp{
     public int linearap(int a[], int n, int x)
@@ -38,6 +39,7 @@ public class lastocc {
         int a[] = new int[n];
         for(int i=0;i<n;i++)
         a[i]=s.nextInt();
+        Arrays.sort(a);
         int x = s.nextInt();
         lasttwoapp t = new lasttwoapp();
         int y = t.linearap(a,n,x);
